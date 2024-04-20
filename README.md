@@ -13,6 +13,8 @@ Development: https://github.com/opengeos/HyperCoast
 
 Documentation: https://hypercoast.org
 
+A Python package for visualizing and analyzing hyperspectral data in coastal regions
+
 Current build status
 ====================
 
@@ -147,5 +149,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@bingqing-liu](https://github.com/bingqing-liu/)
 * [@giswqs](https://github.com/giswqs/)
 
