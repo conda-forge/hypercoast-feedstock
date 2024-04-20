@@ -1,5 +1,5 @@
 {% set name = "hypercoast" %}
-{% set version = "0.0.2" %}
+{% set version = "0.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -22,8 +22,13 @@ requirements:
     - pip
   run:
     - python >=3.8
+    - geopandas
+    - hvplot
     - leafmap
+    - localtileserver
+    - netcdf4
     - numpy
+    - xarray
 
 test:
   imports:
@@ -40,6 +45,7 @@ about:
   license_file: LICENSE
   doc_url: https://hypercoast.org
   dev_url: https://github.com/opengeos/HyperCoast
+  description: A Python package for visualizing and analyzing hyperspectral data in coastal regions
 
 extra:
   recipe-maintainers:
