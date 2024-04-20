@@ -1,5 +1,5 @@
 {% set name = "hypercoast" %}
-{% set version = "0.0.2" %}
+{% set version = "0.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hypercoast-{{ version }}.tar.gz
-  sha256: e3f12266c9857e6403b3d2f33e096382142513a4d26a7835f1a631cab4c3facc
+  sha256: b12124d428b963c93f1968b96f717e4baf4fac04474446be79aa4a5adb4a72ad
 
 build:
   noarch: python
@@ -22,8 +22,13 @@ requirements:
     - pip
   run:
     - python >=3.8
+    - geopandas
+    - hvplot
     - leafmap
+    - localtileserver
+    - netcdf4
     - numpy
+    - xarray
 
 test:
   imports:
@@ -40,8 +45,9 @@ about:
   license_file: LICENSE
   doc_url: https://hypercoast.org
   dev_url: https://github.com/opengeos/HyperCoast
+  description: A Python package for visualizing and analyzing hyperspectral data in coastal regions
 
 extra:
   recipe-maintainers:
-    - Bingqing9027
+    - bingqing-liu
     - giswqs
