@@ -1,5 +1,5 @@
 {% set name = "hypercoast" %}
-{% set version = "0.0.3" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hypercoast-{{ version }}.tar.gz
-  sha256: b12124d428b963c93f1968b96f717e4baf4fac04474446be79aa4a5adb4a72ad
+  sha256: 696866da6f83a1be6a96e76c39310b7c0ce32475e040d84dc3ae7bc7562ea627
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
-  entry_points: 
+  entry_points:
     - hypercoast = hypercoast.cli:main
 
 requirements:
