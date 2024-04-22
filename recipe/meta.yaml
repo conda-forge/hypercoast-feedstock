@@ -1,5 +1,5 @@
 {% set name = "hypercoast" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hypercoast-{{ version }}.tar.gz
-  sha256: 696866da6f83a1be6a96e76c39310b7c0ce32475e040d84dc3ae7bc7562ea627
+  sha256: 6582b0846bfdfc1d797e430d75db6b4c3d9be3216dd71bfcc96953d62a31f87d
 
 build:
   noarch: python
@@ -23,11 +23,14 @@ requirements:
   run:
     - python >=3.8
     - geopandas
+    - h5netcdf
     - hvplot
     - leafmap
     - localtileserver
     - netcdf4
     - numpy
+    - rioxarray
+    - s3fs
     - xarray
 
 test:
