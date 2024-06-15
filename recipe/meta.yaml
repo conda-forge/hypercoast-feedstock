@@ -1,5 +1,5 @@
 {% set name = "hypercoast" %}
-{% set version = "0.5.3" %}
+{% set version = "0.5.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hypercoast-{{ version }}.tar.gz
-  sha256: 2fda5cc72aac241470bf70741cb540aa674d4de8885cd83e2c06e8492f9fa905
+  sha256: 4e1b57207c897988111ccf6977790a7ca1f7f213bb57c6b603fdac94b43a16f5
 
 build:
   noarch: python
