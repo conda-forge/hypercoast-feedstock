@@ -20,6 +20,8 @@ requirements:
   host:
     - python >=3.8
     - pip
+    - setuptools
+
   run:
     - python >=3.8
     - dask
@@ -34,7 +36,6 @@ requirements:
     - rioxarray
     - s3fs
     - scipy
-    - setuptools
     - xarray
 
 test:
