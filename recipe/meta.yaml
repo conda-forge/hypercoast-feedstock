@@ -34,6 +34,7 @@ requirements:
     - rioxarray
     - s3fs
     - scipy
+    - setuptools
     - xarray
 
 test:
