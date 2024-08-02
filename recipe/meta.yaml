@@ -33,9 +33,11 @@ requirements:
     - mapclassify
     - netcdf4
     - numpy <2.0.0
+    - pycrs
     - rioxarray
     - s3fs
     - scipy
+    - snuggs
     - xarray
 
 test:
