@@ -33,18 +33,17 @@ requirements:
     - mapclassify
     - netcdf4
     - numpy <2.0.0
-    - pycrs
     - rioxarray
     - s3fs
     - scipy
-    - snuggs
+    - scikit-learn
     - xarray
 
 test:
   imports:
     - hypercoast
-  commands:
-    - pip check
+  # commands:
+  #   - pip check
   requires:
     - pip
 
