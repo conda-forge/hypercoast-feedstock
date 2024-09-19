@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
   entry_points:
     - hypercoast = hypercoast.cli:main
 
@@ -32,7 +32,7 @@ requirements:
     - localtileserver
     - mapclassify
     - netcdf4
-    - numpy <2.0.0
+    - numpy 
     - rioxarray
     - s3fs
     - scipy
