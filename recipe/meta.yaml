@@ -12,18 +12,18 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
   entry_points:
     - hypercoast = hypercoast.cli:main
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools
 
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - dask
     - geopandas
     - h5netcdf
@@ -46,6 +46,7 @@ test:
   #   - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://hypercoast.org
