@@ -33,10 +33,12 @@ requirements:
     - mapclassify
     - netcdf4
     - numpy
+    - openpyxl
     - rioxarray
     - s3fs
     - scipy
     - scikit-learn
+    - seaborn
     - xarray
 
 test:
