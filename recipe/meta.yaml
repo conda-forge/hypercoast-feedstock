@@ -34,6 +34,7 @@ requirements:
     - netcdf4
     - numpy
     - openpyxl
+    - rio-tiler
     - rioxarray
     - s3fs
     - scipy
