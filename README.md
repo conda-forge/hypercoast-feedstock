@@ -152,6 +152,3 @@ Feedstock Maintainers
 * [@bingqing-liu](https://github.com/bingqing-liu/)
 * [@giswqs](https://github.com/giswqs/)
 
-
-<!-- dummy commit to enable rerendering -->
-
