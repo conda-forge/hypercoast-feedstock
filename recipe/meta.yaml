@@ -27,6 +27,7 @@ requirements:
     - dask
     - geopandas
     - h5netcdf
+    - h5py
     - hvplot
     - leafmap
     - localtileserver
