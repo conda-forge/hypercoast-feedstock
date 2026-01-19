@@ -1,5 +1,5 @@
 {% set name = "hypercoast" %}
-{% set version = "0.18.0" %}
+{% set version = "0.19.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hypercoast-{{ version }}.tar.gz
-  sha256: fe39ff1480df4c9bbcee500508f9207d42e568d0c16238e7913d2568e86df11f
+  sha256: 535bdd999a9e4a32db2af961638d029d8e157575c8b6f78b1b44ed344e61ceba
 
 build:
   noarch: python
@@ -27,6 +27,7 @@ requirements:
     - dask
     - geopandas
     - h5netcdf
+    - h5py
     - hvplot
     - leafmap
     - localtileserver
