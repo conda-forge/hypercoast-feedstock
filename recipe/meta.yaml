@@ -25,22 +25,25 @@ requirements:
   run:
     - python >={{ python_min }}
     - dask
+    - earthaccess
     - geopandas
     - h5netcdf
     - h5py
     - hvplot
-    - leafmap
+    - leafmap >=0.62.0
     - localtileserver
     - mapclassify
     - netcdf4
     - numpy
     - openpyxl
-    - rio-tiler
+    - psutil
+    - requests
     - rioxarray
     - s3fs
     - scipy
     - scikit-learn
     - seaborn
+    - setuptools
     - xarray
 
 test:
